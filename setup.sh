@@ -12,8 +12,8 @@ echo "Retrieving files from the internet..."
 mkdir -p ./bin
 
 DLT=""
-DLT=`which wget && echo -ne " -qO -"  || echo -ne`
-DLT=${DLT:-`which curl && echo -ne " -fsSL" || echo -ne`}
+DLT=`which wget && echo -ne " -O -"  || echo -ne`
+DLT=${DLT:-`which curl && echo -ne " -L" || echo -ne`}
 test -n "$DLT" || (echo "Error: Neither wget nor curl was found on this system." && exit 1)
 
 $DLT $WGGOSRC > ./bin/wireguard-go
