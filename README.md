@@ -15,3 +15,8 @@ You can now execute `run.sh` with elevated privilege to start a WireGuard VPN se
 # ./run.sh <path-to-wg-configuration-file>
 ```
 To terminate the session, simply run the command above again.
+
+## Disclaimer
+This tool consists works of the following:
+- [wireguard-tools, WireGuard](https://github.com/WireGuard/wireguard-tools/blob/master/COPYING)
+- [wireguard-go, WireGuard](https://github.com/WireGuard/wireguard-go#license)
