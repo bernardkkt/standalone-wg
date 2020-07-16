@@ -25,4 +25,5 @@ ls ./bin/wireguard-go && chmod +x ./bin/wireguard-go
 ls ./bin/wg && chmod +x ./bin/wg
 ls ./bin/wg-quick && chmod +x ./bin/wg-quick
 
+chmod +x ./run.sh
 echo "Done"
